@@ -3,7 +3,7 @@
   Доповніть цю функцію, використовуючи generics, щоб вона повертала правильний тип.
 */
 
-const getPromise = async (): Promise<Array<any>> => {
+const getPromise = async (): Promise<[string, number]> => {
   return await new Promise((resolve) => {
     resolve(["Text", 50]);
   });

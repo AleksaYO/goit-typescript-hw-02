@@ -6,8 +6,11 @@ type Pages = {
   title: string;
   likes: number;
   accounts: Array<string>;
-  status: string;
-  details?: object;
+  status: "open" | "close";
+  details?: {
+    createAt: Date;
+    updateAt: Date;
+  };
 };
 
 const page1: Pages = {

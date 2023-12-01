@@ -3,11 +3,11 @@
   який може містити значення "male", "female". Створіть змінну myGender цього типу.
 */
 
-type Gender = string;
+type Gender = {
+  male: string;
+  female: string;
+};
 
 let myGender: Gender;
-myGender = "male";
-
-console.log(myGender);
 
 export {};
